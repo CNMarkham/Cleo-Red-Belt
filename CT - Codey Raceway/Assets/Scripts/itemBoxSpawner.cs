@@ -13,7 +13,8 @@ public class itemBoxSpawner : MonoBehaviour
     {
         for (int p = 0; p <= numberOfBoxes; p++)
         {
-            
+            GameObject itemBoxClone = Instantiate(itemBox, transform.position, Quaternion.identity);
+
         }
     }
 
