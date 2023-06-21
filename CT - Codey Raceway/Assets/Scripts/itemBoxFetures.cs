@@ -14,15 +14,15 @@ public class itemBoxFetures : MonoBehaviour
     {
         transform.Rotate(new Vector3(30, 68, 49) * Time.deltaTime * RotationSpeed);
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             transform.localScale = Vector3.zero;
             Invoke("Reappear", 2f);
         }
     }
+   
 
     private void Reappear()
     {

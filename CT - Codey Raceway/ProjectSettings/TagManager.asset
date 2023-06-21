@@ -6,6 +6,8 @@ TagManager:
   tags:
   - checkpoint
   - itemBoxes
+  - Ground
+  - Obstacle
   layers:
   - Default
   - TransparentFX
