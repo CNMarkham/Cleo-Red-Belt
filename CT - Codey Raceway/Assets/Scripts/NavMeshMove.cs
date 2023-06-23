@@ -11,14 +11,20 @@ public class NavMeshMove : MonoBehaviour
     void Start()
     {
         aGeNt.destination = GameObject.FindGameObjectWithTag("Obstacle").transform.position;
+    }
 
-        for ( )
-    } 
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(collision.gameObject);
+            //Destroy(gameObject);
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+        aGeNt.destination = GameObject.FindGameObjectWithTag("Obstacle").transform.position;
     }
 }
