@@ -18,7 +18,7 @@ public class NavMeshMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Destroy(collision.gameObject);
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 

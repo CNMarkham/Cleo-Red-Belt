@@ -8933,7 +8933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3149b76bf3e4b8d98c2e9e1c53e668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1069
+  Speed: 1000
   running: 1
   canMove: 1
   move: {x: 0, y: 0, z: 0}
@@ -8972,8 +8972,9 @@ MonoBehaviour:
   powerupList:
   - {fileID: 6461896330074046867, guid: 2e75a9136950d6f4583951aa7c7bf85b, type: 3}
   - {fileID: 6461896330074046867, guid: 70cb252a0ef61fc4f852ae009f8111d8, type: 3}
+  - {fileID: 1484903607247257586, guid: 5b9d6985d7a88cb4e8a8db512f02f671, type: 3}
   randomNumberInList: 0
-  chosenPowerup: {fileID: 6461896330074046867, guid: 2e75a9136950d6f4583951aa7c7bf85b, type: 3}
+  chosenPowerup: {fileID: 0}
 --- !u!1001 &704251778
 PrefabInstance:
   m_ObjectHideFlags: 0

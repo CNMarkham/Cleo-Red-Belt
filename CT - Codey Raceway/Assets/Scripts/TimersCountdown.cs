@@ -12,7 +12,7 @@ public class TimersCountdown : MonoBehaviour
 
     public float totalLapTime;
     public float totalCountdownTime;
-
+    bool speedCHanged = false;
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +28,11 @@ public class TimersCountdown : MonoBehaviour
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
             lapTime.text = Mathf.Round(totalLapTime).ToString();
-            Speed.Speed = 1069;
+            if (!speedCHanged)
+            {
+                Speed.Speed = 1000;
+                speedCHanged  = true;
+            }
         }
 
         if (totalLapTime < 0 && PrintedTime == false)
