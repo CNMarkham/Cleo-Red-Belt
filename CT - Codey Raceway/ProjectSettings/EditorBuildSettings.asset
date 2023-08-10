@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Codey Raceway.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/DaEnd.unity
+    guid: 4025d3e4a55284141823967c278ba546
+  - enabled: 1
+    path: Assets/Scenes/DaEndLose.unity
+    guid: bc1a0afdd44a0884cac6f9f0316266c4
   m_configObjects: {}

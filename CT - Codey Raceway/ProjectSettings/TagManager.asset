@@ -8,6 +8,7 @@ TagManager:
   - itemBoxes
   - Ground
   - Obstacle
+  - UtouchUdie
   layers:
   - Default
   - TransparentFX

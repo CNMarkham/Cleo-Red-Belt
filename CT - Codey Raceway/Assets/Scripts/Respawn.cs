@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour
 {
@@ -12,7 +13,11 @@ public class Respawn : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == ("UtouchUdie"))
+        {
+            SceneManager.LoadScene(0);
+        }
+
     }
 
     // Update is called once per frame
