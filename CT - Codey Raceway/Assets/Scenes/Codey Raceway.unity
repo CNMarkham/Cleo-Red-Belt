@@ -1022,7 +1022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5202732821079344928, guid: cebfacc247a640945a2c30b442202fca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2053.2227
+      value: 2053.25
       objectReference: {fileID: 0}
     - target: {fileID: 5202732821079344928, guid: cebfacc247a640945a2c30b442202fca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1062,7 +1062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5202732821079448320, guid: cebfacc247a640945a2c30b442202fca, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cebfacc247a640945a2c30b442202fca, type: 3}
@@ -2809,7 +2809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8552901019017533310, guid: f26c4802677a5194091851e89ded1f3a, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 9077517995956080068, guid: f26c4802677a5194091851e89ded1f3a, type: 3}
       propertyPath: m_RootOrder
@@ -3344,7 +3344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 108507113624698413, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2050.9302
+      value: 2050.9575
       objectReference: {fileID: 0}
     - target: {fileID: 108507113624698413, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3384,7 +3384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 108507113624723981, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 840579875832209995, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
       propertyPath: m_Convex
@@ -3736,6 +3736,10 @@ PrefabInstance:
     - target: {fileID: 100010, guid: d0223f77114284b47a0e8b317e71e4dc, type: 3}
       propertyPath: m_Name
       value: SkyDome
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: d0223f77114284b47a0e8b317e71e4dc, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0223f77114284b47a0e8b317e71e4dc, type: 3}
       propertyPath: m_LocalScale.x
@@ -4328,7 +4332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393555384750968757, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2049.9028
+      value: 2049.9302
       objectReference: {fileID: 0}
     - target: {fileID: 393555384750968757, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4368,7 +4372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026222739917526287, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
@@ -5206,7 +5210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4373798459345739174, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
@@ -5253,7 +5257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2055.0327
+      value: 2055.06
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5293,7 +5297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7029523610040634915, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_Convex
@@ -5401,7 +5405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_RootOrder
@@ -5425,7 +5429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2050.9858
+      value: 2051.0132
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5669,7 +5673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1493958779012120596, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 1493958779012619316, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
       propertyPath: m_RootOrder
@@ -5693,7 +5697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1493958779012619316, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2052.5728
+      value: 2052.6
       objectReference: {fileID: 0}
     - target: {fileID: 1493958779012619316, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6923,7 +6927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4373798459345739174, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
@@ -7675,7 +7679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8552901019017533310, guid: f26c4802677a5194091851e89ded1f3a, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 9077517995956080068, guid: f26c4802677a5194091851e89ded1f3a, type: 3}
       propertyPath: m_RootOrder
@@ -9287,7 +9291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 579533310182082935, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5717788074925968791, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_Convex
@@ -10019,7 +10023,7 @@ GameObject:
   - component: {fileID: 758246853}
   m_Layer: 0
   m_Name: ball
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10225,7 +10229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2051.8918
+      value: 2051.9192
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10265,7 +10269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7029523610040634915, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_Convex
@@ -12332,7 +12336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393555384750968757, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2049.9028
+      value: 2049.9302
       objectReference: {fileID: 0}
     - target: {fileID: 393555384750968757, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12532,7 +12536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4373798459345739174, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
@@ -12842,7 +12846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 579533310182082935, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5717788074925968791, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_Convex
@@ -13822,7 +13826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 656600ea12dcd894d99e51d4d2981d69, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 656600ea12dcd894d99e51d4d2981d69, type: 3}
@@ -14082,7 +14086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156632962304447296, guid: fca05fc86b15f0d4da25ed7793db4384, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6790040258192755194, guid: fca05fc86b15f0d4da25ed7793db4384, type: 3}
       propertyPath: m_RootOrder
@@ -16100,7 +16104,7 @@ GameObject:
   - component: {fileID: 1232722516}
   m_Layer: 0
   m_Name: what is this
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16334,7 +16338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 656600ea12dcd894d99e51d4d2981d69, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 656600ea12dcd894d99e51d4d2981d69, type: 3}
@@ -17467,7 +17471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680757731159730826, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2052.3928
+      value: 2052.4202
       objectReference: {fileID: 0}
     - target: {fileID: 4680757731159730826, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17507,7 +17511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7495719641570791432, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
       propertyPath: m_Convex
@@ -17859,7 +17863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 579533310182082935, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5717788074925968791, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_Convex
@@ -19417,7 +19421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_RootOrder
@@ -19441,7 +19445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2051.7026
+      value: 2051.73
       objectReference: {fileID: 0}
     - target: {fileID: 8783306491909106419, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19649,7 +19653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4373798459345739174, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a9f73a18c612c34a9773c0dd0fae0ab, type: 3}
@@ -20750,7 +20754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156632962304447296, guid: fca05fc86b15f0d4da25ed7793db4384, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6790040258192755194, guid: fca05fc86b15f0d4da25ed7793db4384, type: 3}
       propertyPath: m_RootOrder
@@ -21405,7 +21409,7 @@ GameObject:
   - component: {fileID: 1636624696}
   m_Layer: 0
   m_Name: ball
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21912,7 +21916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3916574325633068106, guid: 18bb023d75a113f4cb8d1452371f5c0e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2053.27
+      value: 2053.2974
       objectReference: {fileID: 0}
     - target: {fileID: 3916574325633068106, guid: 18bb023d75a113f4cb8d1452371f5c0e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21952,7 +21956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4400482160171448048, guid: 18bb023d75a113f4cb8d1452371f5c0e, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18bb023d75a113f4cb8d1452371f5c0e, type: 3}
@@ -22169,7 +22173,7 @@ GameObject:
   - component: {fileID: 1673994841}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22341,7 +22345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026222739917526287, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f98c8176bfca7347b11006aac2c90ce, type: 3}
@@ -23405,7 +23409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2052.921
+      value: 2052.9482
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23445,7 +23449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7029523610040634915, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_Convex
@@ -23854,7 +23858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 579533310182082935, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5717788074925968791, guid: b6e6982b772a1bc46b88d93db630bee4, type: 3}
       propertyPath: m_Convex
@@ -24035,7 +24039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4661435515762455780, guid: e289bf5debb17f6459818c207d781953, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953, type: 3}
       propertyPath: m_RootOrder
@@ -24059,7 +24063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2050.2527
+      value: 2050.28
       objectReference: {fileID: 0}
     - target: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24372,7 +24376,7 @@ GameObject:
   - component: {fileID: 1886815945}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24989,6 +24993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: straightTrack (51)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4689709987394344508, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
@@ -25234,7 +25242,7 @@ GameObject:
   - component: {fileID: 1961589308}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26521,7 +26529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2052.8232
+      value: 2052.8506
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26561,7 +26569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7029523610040634915, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_Convex

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimersCountdown : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class TimersCountdown : MonoBehaviour
         {
             print("Time Is Up Buddy");
             PrintedTime = true;
+            SceneManager.LoadScene(2);
         }
 
 

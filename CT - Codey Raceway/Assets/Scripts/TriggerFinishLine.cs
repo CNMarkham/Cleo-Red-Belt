@@ -20,7 +20,6 @@ public class TriggerFinishLine : MonoBehaviour
             else
             {
                 print("Cheese man");
-                SceneManager.LoadScene(2);
             }
         }
     }
