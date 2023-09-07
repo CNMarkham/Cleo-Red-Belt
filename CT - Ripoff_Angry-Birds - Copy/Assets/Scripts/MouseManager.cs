@@ -13,6 +13,10 @@ public class MouseManager : MonoBehaviour
     public Transform sLimEtRanSfOrM;
     public Rigidbody sLimERigIdIbOdY;
 
+    private Vector3 normalPosition;
+
+    private Quaternion normalRotation;
+
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +33,7 @@ public class MouseManager : MonoBehaviour
                 mouseDiffrence.y * 1.2f,
                 mouseDiffrence.y * 1.5f
                 );
+            sLimEtRanSfOrM.position = normalPosition - launchVector / 400;
             launchVector.Normalize();
         }
 
@@ -38,5 +43,17 @@ public class MouseManager : MonoBehaviour
             sLimERigIdIbOdY.AddForce(launchForce * launchVector, ForceMode.Impulse);
 
         }
+
+        if (Input.GetMouseButton(1))
+        {
+            Vector3 Position = normalPosition;
+            Quaternion Rotation = normalRotation;
+        }
+    }
+
+    private void Start()
+    {
+        normalPosition = sLimEtRanSfOrM.position;
+        normalRotation = sLimEtRanSfOrM.rotation;
     }
 }
