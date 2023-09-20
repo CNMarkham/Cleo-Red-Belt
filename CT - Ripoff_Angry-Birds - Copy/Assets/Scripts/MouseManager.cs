@@ -17,6 +17,9 @@ public class MouseManager : MonoBehaviour
 
     private Quaternion normalRotation;
 
+    [Header("Lives")]
+    public LivesManager LivesManager;
+
     // Update is called once per frame
     void Update()
     {

@@ -2,24 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Collectable : MonoBehaviour
 {
     public float distanceToMove;
 
-    private Vector3 startingPosition;
-    private Vector3 endingPosition;
+    public Vector3 startingPosition;
+    public Vector3 endingPosition;
 
+    public AnimationCurve curve;
 
     // Start is called before the first frame update
     void Start()
     {
-        startingPosition = transform.position;
-        endingPosition =  (startingPosition.x +);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = Vector3.Lerp(startingPosition, endingPosition, curve.Evaluate(Time.time));
+    }
+
+    private void OnTriggerEnter(Collider a)
+    {
+        if (a.CompareTag("Player"))
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
