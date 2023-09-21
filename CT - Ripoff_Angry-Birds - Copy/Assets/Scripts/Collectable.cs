@@ -24,9 +24,9 @@ public class Collectable : MonoBehaviour
         transform.position = Vector3.Lerp(startingPosition, endingPosition, curve.Evaluate(Time.time));
     }
 
-    private void OnTriggerEnter(Collider a)
+    private void OnTriggerEnter(Collider C)
     {
-        if (a.CompareTag("Player"))
+        if (C.CompareTag("Player"))
         {
             gameObject.SetActive(false);
         }

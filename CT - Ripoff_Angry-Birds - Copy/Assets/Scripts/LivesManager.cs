@@ -10,6 +10,7 @@ public class LivesManager : MonoBehaviour
     public void RemoveLife()
     {
         lives -= 1;
+        hearts[lives].SetActive(false);
         print("Imagine LOsing a Lifeeee!! Lives: " + lives);
     }
 

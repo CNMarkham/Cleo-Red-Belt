@@ -23,6 +23,11 @@ public class MouseManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (LivesManager.lives < 0)
+        {
+            return;
+        }
+        
         if (Input.GetMouseButtonDown(0))
         {
             clickStarLocation = Input.mousePosition;
@@ -47,10 +52,12 @@ public class MouseManager : MonoBehaviour
 
         }
 
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            Vector3 Position = normalPosition;
-            Quaternion Rotation = normalRotation;
+            sLimEtRanSfOrM.position = normalPosition;
+            sLimEtRanSfOrM.rotation = normalRotation;
+            sLimERigIdIbOdY.isKinematic = true;
+            LivesManager.RemoveLife();
         }
     }
 
