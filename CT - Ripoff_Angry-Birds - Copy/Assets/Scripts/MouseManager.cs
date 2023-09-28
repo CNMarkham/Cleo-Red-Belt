@@ -20,6 +20,9 @@ public class MouseManager : MonoBehaviour
     [Header("Lives")]
     public LivesManager LivesManager;
 
+    private Vector3 forwardAxis;
+    private Vector3 sideAxis;
+
     // Update is called once per frame
     void Update()
     {
@@ -36,11 +39,10 @@ public class MouseManager : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 mouseDiffrence = clickStarLocation - Input.mousePosition;
-            launchVector = new Vector3(
-                mouseDiffrence.x * 1f,
-                mouseDiffrence.y * 1.2f,
-                mouseDiffrence.y * 1.5f
-                );
+
+            launchVector = sideAxis * mouseDiffrence.x
+                + forwardAxis * mouseDiffrence.y
+                + Vector3.up * mouseDiffrence.y;
             sLimEtRanSfOrM.position = normalPosition - launchVector / 400;
             launchVector.Normalize();
         }
@@ -65,5 +67,8 @@ public class MouseManager : MonoBehaviour
     {
         normalPosition = sLimEtRanSfOrM.position;
         normalRotation = sLimEtRanSfOrM.rotation;
+
+        forwardAxis = Camera.main.transform.forward;
+        sideAxis = Camera.main.transform.right;
     }
 }

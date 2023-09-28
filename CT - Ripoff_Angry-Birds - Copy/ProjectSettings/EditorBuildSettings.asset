@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Sulky Slime MAIN.unity
+    guid: 0fb7a214e67fea64e8ab27068c7aa3a4
+  - enabled: 1
     path: Assets/Scenes/Sulky Slime New.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
