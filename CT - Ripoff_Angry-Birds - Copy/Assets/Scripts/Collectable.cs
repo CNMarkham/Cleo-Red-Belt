@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class Collectable : MonoBehaviour
 {
@@ -29,6 +29,9 @@ public class Collectable : MonoBehaviour
         if (C.CompareTag("Player"))
         {
             gameObject.SetActive(false);
+            SceneManager.LoadScene(1);
         }
     }
+
+
 }
