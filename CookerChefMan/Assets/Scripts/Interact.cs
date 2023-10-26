@@ -2,17 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Interact : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    public string triggerName = "";
+
+    public GameObject breadPrefab;
+
+    public GameObject heldItem;
+
     void Update()
     {
-        
+        if (Input.GetKeyDown("space"))
+        {
+            if (triggerName == "bread")
+            {
+                heldItem = Instantiate(breadPrefab, transform, false);
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        triggerName = other.name;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        triggerName = "";
     }
 }
