@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
+    public Toaster toaster;
 
     public string triggerName = "";
 
     public GameObject breadPrefab;
 
     public GameObject heldItem;
+    public string heldItemName;
 
     void Update()
     {
@@ -18,6 +20,24 @@ public class Interact : MonoBehaviour
             if (triggerName == "bread")
             {
                 heldItem = Instantiate(breadPrefab, transform, false);
+                heldItem.transform.localPosition = new Vector3(1, 1, 0);
+                heldItem.transform.localScale = new Vector3(3, 3, 3);
+                heldItemName = "breadSlice";
+            }
+
+            if (triggerName == "Toaster")
+            {
+                Debug.Log("Im at the Toaster!");
+                if(heldItemName == "breadSlice")
+                {
+                    print("Ready to Toast!");
+                    Destroy(heldItem);
+                }
+                else
+                {
+                    print("Codey is empty Handed");
+                }
+
             }
         }
     }
