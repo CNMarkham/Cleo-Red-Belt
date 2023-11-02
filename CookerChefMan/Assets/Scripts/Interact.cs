@@ -32,10 +32,20 @@ public class Interact : MonoBehaviour
                 {
                     print("Ready to Toast!");
                     Destroy(heldItem);
+                    heldItemName = "";
+                    toaster.ToastBread();
                 }
                 else
                 {
                     print("Codey is empty Handed");
+                    if(toaster.cookedFood == "toast")
+                    {
+                        heldItem = Instantiate(breadPrefab, transform, false);
+                        heldItem.transform.localPosition = new Vector3(1, 1, 0);
+                        heldItemName = "toastSlice";
+                        toaster.CleanToaster();
+                        heldItem.transform.localScale = new Vector3(3, 3, 3);
+                    }
                 }
 
             }

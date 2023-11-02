@@ -7,6 +7,8 @@ public class Toaster : MonoBehaviour
 
     public GameObject toast;
 
+    public string cookedFood = "";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +18,11 @@ public class Toaster : MonoBehaviour
     public void ToastBread()
     {
         toast.SetActive(true);
+        cookedFood = "toast";
+    }
+
+    public void CleanToaster()
+    {
+        toast.SetActive(false);
     }
 }
