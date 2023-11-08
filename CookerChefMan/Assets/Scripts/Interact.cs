@@ -49,7 +49,14 @@ public class Interact : MonoBehaviour
                 }
 
             }
+
+            if (triggerName == "Recivers")
+            {
+                print("I'm ready to make a dish");
+            }
         }
+
+     
     }
 
     private void OnTriggerEnter(Collider other)
