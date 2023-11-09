@@ -30,10 +30,13 @@ public class Interact : MonoBehaviour
                 Debug.Log("Im at the Toaster!");
                 if(heldItemName == "breadSlice")
                 {
-                    print("Ready to Toast!");
+                    toaster.ToastBread();
+                    PlaceHeldItem();
+
+/*                    print("Ready to Toast!");
                     Destroy(heldItem);
                     heldItemName = "";
-                    toaster.ToastBread();
+                    toaster.ToastBread();*/
                 }
                 else
                 {
@@ -50,13 +53,25 @@ public class Interact : MonoBehaviour
 
             }
 
+
             if (triggerName == "Recivers")
             {
-                print("I'm ready to make a dish");
+                PlaceHeldItem();
+                GameObject.Find("Recivers/French Toast/toastSlice").SetActive(true);
             }
         }
 
      
+    }
+
+    private void HandItem(string item)
+    {
+
+    }
+    private void PlaceHeldItem()
+    {
+        Destroy(heldItem);
+        heldItemName = "";
     }
 
     private void OnTriggerEnter(Collider other)
