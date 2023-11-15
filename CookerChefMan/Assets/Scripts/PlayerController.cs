@@ -38,10 +38,10 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("verticalVector", 0);
     }
 
-    public void OnCollisionEnter(Collision collision)
+/*    public void OnCollisionEnter(Collision collision)
     {
         Debug.Log("col" + collision.gameObject.name);
-    }
+    }*/
 
     // 
 }

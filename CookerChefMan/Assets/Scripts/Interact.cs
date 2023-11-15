@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,9 +19,7 @@ public class Interact : MonoBehaviour
         {
             if (triggerName == "bread")
             {
-                heldItem = Instantiate(breadPrefab, transform, false);
-                heldItem.transform.localPosition = new Vector3(1, 1, 0);
-                heldItem.transform.localScale = new Vector3(3, 3, 3);
+                HandBread();
                 heldItemName = "breadSlice";
             }
 
@@ -43,31 +41,33 @@ public class Interact : MonoBehaviour
                     print("Codey is empty Handed");
                     if(toaster.cookedFood == "toast")
                     {
-                        heldItem = Instantiate(breadPrefab, transform, false);
-                        heldItem.transform.localPosition = new Vector3(1, 1, 0);
+                        HandBread();
                         heldItemName = "toastSlice";
                         toaster.CleanToaster();
-                        heldItem.transform.localScale = new Vector3(3, 3, 3);
+
                     }
                 }
 
             }
 
 
-            if (triggerName == "Recivers")
+            if (triggerName == "Receivers")
             {
                 PlaceHeldItem();
-                GameObject.Find("Recivers/French Toast/toastSlice").SetActive(true);
+                GameObject.Find("Everything/FoodOnPlate/Receivers/FrenchToast/toastSlice").SetActive(true);
             }
         }
 
      
     }
 
-    private void HandItem(string item)
+    private void HandBread()
     {
-
+        heldItem = Instantiate(breadPrefab, transform, false);
+        heldItem.transform.localPosition = new Vector3(1, 1, 0);
+        heldItem.transform.localScale = new Vector3(3, 3, 3);
     }
+
     private void PlaceHeldItem()
     {
         Destroy(heldItem);
