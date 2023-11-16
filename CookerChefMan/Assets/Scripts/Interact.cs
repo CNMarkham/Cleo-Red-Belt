@@ -9,6 +9,7 @@ public class Interact : MonoBehaviour
     public string triggerName = "";
 
     public GameObject breadPrefab;
+    public GameObject eggPrefab;
 
     public GameObject heldItem;
     public string heldItemName;
@@ -19,8 +20,12 @@ public class Interact : MonoBehaviour
         {
             if (triggerName == "bread")
             {
-                HandBread();
-                heldItemName = "breadSlice";
+                PickupItem(breadPrefab, "breadSlice");
+            }
+
+            if (triggerName == "Egg")
+            {
+                PickupItem(eggPrefab, "egg");
             }
 
             if (triggerName == "Toaster")
@@ -41,8 +46,7 @@ public class Interact : MonoBehaviour
                     print("Codey is empty Handed");
                     if(toaster.cookedFood == "toast")
                     {
-                        HandBread();
-                        heldItemName = "toastSlice";
+                        PickupItem(breadPrefab, "toastSlice");
                         toaster.CleanToaster();
 
                     }
@@ -54,11 +58,19 @@ public class Interact : MonoBehaviour
             if (triggerName == "Receivers")
             {
                 PlaceHeldItem();
-                GameObject.Find("Everything/FoodOnPlate/Receivers/FrenchToast/toastSlice").SetActive(true);
+                GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").SetActive(true);
             }
         }
 
      
+    }
+
+    private void PickupItem(GameObject itemPrefab, string itemName)
+    {
+        heldItem = Instantiate(itemPrefab, transform, false);
+        heldItem.transform.localPosition = new Vector3(1, 1, 0);
+/*        heldItem.transform.localScale = new Vector3(3, 3, 3);*/
+        heldItemName = itemName;
     }
 
     private void HandBread()
