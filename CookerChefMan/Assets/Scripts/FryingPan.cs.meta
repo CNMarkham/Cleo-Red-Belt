@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 82d37a03e749f4f4a8cf2256a6ad9a5e
+guid: 0834ed2e9ce149345ab2cbe2b090cbc3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - toast: {fileID: 7908795355744157046, guid: 345566b998b915f4ca5f1814f31682ec, type: 3}
-  - friedEgg: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

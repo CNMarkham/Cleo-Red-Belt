@@ -6,6 +6,7 @@ public class Toaster : MonoBehaviour
 {
 
     public GameObject toast;
+    public GameObject friedEgg;
 
     public string cookedFood = "";
 

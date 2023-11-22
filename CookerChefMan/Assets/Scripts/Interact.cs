@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interact : MonoBehaviour
 {
     public Toaster toaster;
+    public FryingPan pan;
 
     public string triggerName = "";
 
@@ -31,20 +32,20 @@ public class Interact : MonoBehaviour
             if (triggerName == "Toaster")
             {
                 Debug.Log("Im at the Toaster!");
-                if(heldItemName == "breadSlice")
+                if (heldItemName == "breadSlice")
                 {
                     toaster.ToastBread();
                     PlaceHeldItem();
 
-/*                    print("Ready to Toast!");
-                    Destroy(heldItem);
-                    heldItemName = "";
-                    toaster.ToastBread();*/
+                    /*                    print("Ready to Toast!");
+                                        Destroy(heldItem);
+                                        heldItemName = "";
+                                        toaster.ToastBread();*/
                 }
                 else
                 {
                     print("Codey is empty Handed");
-                    if(toaster.cookedFood == "toast")
+                    if (toaster.cookedFood == "toast")
                     {
                         PickupItem(breadPrefab, "toastSlice");
                         toaster.CleanToaster();
@@ -52,8 +53,26 @@ public class Interact : MonoBehaviour
                     }
                 }
 
-            }
 
+            }
+            if (triggerName == "FryingPan")
+            {
+                Debug.Log("Im at the Toaster!");
+                if (heldItemName == "egg")
+                {
+                    pan.FriedEgg();
+                    PlaceHeldItem();
+                }
+            }
+            else
+            {
+                print("Codey is empty Handed");
+                if (pan.cookedFood == "friedEgg")
+                {
+                    PickupItem(eggPrefab, "friedEgg");
+                    pan.CleanPan();
+                }
+            }
 
             if (triggerName == "Receivers")
             {
