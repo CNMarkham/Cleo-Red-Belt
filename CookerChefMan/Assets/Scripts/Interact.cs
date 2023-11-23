@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
+
+    public GameObject breadPrefab;
+    public GameObject eggPrefab;
+    public GameObject friedEggPrefab;
+
     public Toaster toaster;
     public FryingPan pan;
 
     public string triggerName = "";
-
-    public GameObject breadPrefab;
-    public GameObject eggPrefab;
 
     public GameObject heldItem;
     public string heldItemName;
@@ -36,11 +38,6 @@ public class Interact : MonoBehaviour
                 {
                     toaster.ToastBread();
                     PlaceHeldItem();
-
-                    /*                    print("Ready to Toast!");
-                                        Destroy(heldItem);
-                                        heldItemName = "";
-                                        toaster.ToastBread();*/
                 }
                 else
                 {
@@ -57,7 +54,7 @@ public class Interact : MonoBehaviour
             }
             if (triggerName == "FryingPan")
             {
-                Debug.Log("Im at the Toaster!");
+                Debug.Log("Im at the FryingPan!");
                 if (heldItemName == "egg")
                 {
                     pan.FriedEgg();
@@ -69,15 +66,25 @@ public class Interact : MonoBehaviour
                 print("Codey is empty Handed");
                 if (pan.cookedFood == "friedEgg")
                 {
-                    PickupItem(eggPrefab, "friedEgg");
+                    PickupItem(friedEggPrefab, "friedEgg");
                     pan.CleanPan();
                 }
             }
 
             if (triggerName == "Receivers")
             {
-                PlaceHeldItem();
-                GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").SetActive(true);
+                if (heldItemName == "toastSlice")
+                {
+                    PlaceHeldItem();
+                    GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").SetActive(true);
+                    
+                }
+                if (heldItemName == "friedEgg")
+                {
+                    PlaceHeldItem();
+                    GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/egg").SetActive(true);
+                }
+
             }
         }
 
