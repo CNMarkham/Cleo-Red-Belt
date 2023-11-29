@@ -24,6 +24,7 @@ public class FryingPan : MonoBehaviour
     public void CleanPan()
     {
         friedEgg.SetActive(false);
+        cookedFood = "";
     }
 
     // Update is called once per frame
