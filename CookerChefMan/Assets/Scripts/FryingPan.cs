@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class FryingPan : MonoBehaviour
 {
+    [Header("Prefrabs")]
     public GameObject friedEgg;
 
+    [Header("Inventory")]
     public string cookedFood = "";
+
+    [Header("Particles")]
+    public ParticleSystem smoke;
+    public ParticleSystem complete;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +22,7 @@ public class FryingPan : MonoBehaviour
 
     public void FriedEgg()
     {
+        smoke.Play();
         friedEgg.SetActive(true);
         cookedFood = "friedEgg";
         

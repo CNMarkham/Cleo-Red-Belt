@@ -5,10 +5,16 @@ using UnityEngine;
 public class Toaster : MonoBehaviour
 {
 
-    public GameObject toast;
+    [Header("Prefrabs")]
     public GameObject friedEgg;
+    public GameObject toast;
 
+    [Header("Inventory")]
     public string cookedFood = "";
+
+    [Header("Particles")]
+    public ParticleSystem smoke;
+    public ParticleSystem complete;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +24,7 @@ public class Toaster : MonoBehaviour
 
     public void ToastBread()
     {
+        smoke.Play();
         toast.SetActive(true);
         cookedFood = "toast";
     }
