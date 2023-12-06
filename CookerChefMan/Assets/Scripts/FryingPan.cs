@@ -9,6 +9,7 @@ public class FryingPan : MonoBehaviour
 
     [Header("Inventory")]
     public string cookedFood = "";
+    public bool isCooking = false;
 
     [Header("Particles")]
     public ParticleSystem smoke;
@@ -22,9 +23,10 @@ public class FryingPan : MonoBehaviour
 
     public void FriedEgg()
     {
+        isCooking = true;
         smoke.Play();
         friedEgg.SetActive(true);
-        cookedFood = "friedEgg";
+        Invoke("CompleteCooking", 8f);
         
     }
 
@@ -32,6 +34,15 @@ public class FryingPan : MonoBehaviour
     {
         friedEgg.SetActive(false);
         cookedFood = "";
+        complete.Stop();
+    }
+
+    private void CompleteCooking()
+    {        
+        cookedFood = "friedEgg";
+        isCooking = false;
+        smoke.Stop();
+        complete.Play();
     }
 
     // Update is called once per frame

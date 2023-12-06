@@ -42,7 +42,7 @@ public class Interact : MonoBehaviour
                 else
                 {
                     print("Codey is empty Handed");
-                    if (toaster.cookedFood == "toast")
+                    if (!toaster.smoke.isPlaying /*&& toaster.cookedFood == "toastSlice"*/)
                     {
                         PickupItem(breadPrefab, "toastSlice");
                         toaster.CleanToaster();
@@ -64,7 +64,7 @@ public class Interact : MonoBehaviour
             else
             {
                 print("Codey is empty Handed");
-                if (pan.cookedFood == "friedEgg")
+                if (!pan.smoke.isPlaying && pan.cookedFood == "friedEgg")
                 {
                     PickupItem(friedEggPrefab, "friedEgg");
                     pan.CleanPan();

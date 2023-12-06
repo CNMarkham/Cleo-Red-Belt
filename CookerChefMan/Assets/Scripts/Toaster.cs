@@ -11,6 +11,7 @@ public class Toaster : MonoBehaviour
 
     [Header("Inventory")]
     public string cookedFood = "";
+    public bool isCooking = false;
 
     [Header("Particles")]
     public ParticleSystem smoke;
@@ -24,13 +25,25 @@ public class Toaster : MonoBehaviour
 
     public void ToastBread()
     {
+        isCooking = true;
         smoke.Play();
         toast.SetActive(true);
-        cookedFood = "toast";
+        Invoke("CompleteToasting", 6f);
     }
 
     public void CleanToaster()
     {
         toast.SetActive(false);
+        complete.Stop();
     }
+
+    private void CompleteToasting()
+    {
+        cookedFood = "toast";
+        isCooking = false;
+        smoke.Stop();
+        complete.Play();
+    }
+
+    // when complete is played than codey is able to pick up the food :) You can not take the food when the smoke is playing and the complete is not playing qw
 }
