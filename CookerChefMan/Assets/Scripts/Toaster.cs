@@ -11,7 +11,6 @@ public class Toaster : MonoBehaviour
 
     [Header("Inventory")]
     public string cookedFood = "";
-    public bool isCooking = false;
 
     [Header("Particles")]
     public ParticleSystem smoke;
@@ -25,7 +24,6 @@ public class Toaster : MonoBehaviour
 
     public void ToastBread()
     {
-        isCooking = true;
         smoke.Play();
         toast.SetActive(true);
         Invoke("CompleteToasting", 6f);
@@ -34,13 +32,13 @@ public class Toaster : MonoBehaviour
     public void CleanToaster()
     {
         toast.SetActive(false);
+        cookedFood = "";
         complete.Stop();
     }
 
     private void CompleteToasting()
     {
-        cookedFood = "toast";
-        isCooking = false;
+        cookedFood = "toastSlice";
         smoke.Stop();
         complete.Play();
     }
