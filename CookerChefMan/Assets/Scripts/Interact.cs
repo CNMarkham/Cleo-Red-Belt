@@ -60,17 +60,14 @@ public class Interact : MonoBehaviour
                     pan.FriedEgg();
                     PlaceHeldItem();
                 }
-            }
-            else
-            {
                 print("Codey is empty Handed");
                 if (!pan.smoke.isPlaying && pan.cookedFood == "friedEgg")
                 {
                     PickupItem(friedEggPrefab, "friedEgg");
                     pan.CleanPan();
                 }
-            }
 
+            }
             if (triggerName == "Receivers")
             {
                 if (heldItemName == "toastSlice")
