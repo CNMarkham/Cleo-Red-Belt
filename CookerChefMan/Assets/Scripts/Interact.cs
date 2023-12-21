@@ -1,6 +1,7 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interact : MonoBehaviour
 {
@@ -85,6 +86,10 @@ public class Interact : MonoBehaviour
             }
         }
 
+        if (GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").activeSelf && GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/egg").activeSelf)
+        {
+            SceneManager.LoadScene(2);
+        }
      
     }
 

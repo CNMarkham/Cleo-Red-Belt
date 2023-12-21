@@ -9262,7 +9262,7 @@ MonoBehaviour:
   running: 1
   canMove: 1
   move: {x: 0, y: 0, z: 0}
-  _rotationSpeed: 69
+  _rotationSpeed: 80
 --- !u!136 &701019894
 CapsuleCollider:
   m_ObjectHideFlags: 0

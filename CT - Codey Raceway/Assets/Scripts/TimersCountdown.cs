@@ -14,7 +14,6 @@ public class TimersCountdown : MonoBehaviour
     public float totalLapTime;
     public float totalCountdownTime;
     bool speedCHanged = false;
-    // Update is called once per frame
     void Update()
     {
         if (totalCountdownTime > 0)

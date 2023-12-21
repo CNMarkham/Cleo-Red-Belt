@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DumChEf.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/lOOOOSEER.unity
+    guid: aec1006b08806d54a9e988fcb2f2830a
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 76ea3e011fdc8c04d88a28df40a5587d
   m_configObjects: {}
