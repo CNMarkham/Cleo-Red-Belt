@@ -74,19 +74,19 @@ public class Interact : MonoBehaviour
                 if (heldItemName == "toastSlice")
                 {
                     PlaceHeldItem();
-                    GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").SetActive(true);
+                    GameObject.Find("Everything/FoodOnPlate/Receivers/FrenchToast/toastSlice").SetActive(true);
                     
                 }
                 if (heldItemName == "friedEgg")
                 {
                     PlaceHeldItem();
-                    GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/egg").SetActive(true);
+                    GameObject.Find("Everything/FoodOnPlate/Receivers/FrenchToast/egg").SetActive(true);
                 }
 
             }
         }
 
-        if (GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").activeSelf && GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/egg").activeSelf)
+       if (GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").activeSelf && GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/egg").activeSelf)
         {
             SceneManager.LoadScene(2);
         }

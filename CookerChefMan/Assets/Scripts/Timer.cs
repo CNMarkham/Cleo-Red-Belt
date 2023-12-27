@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
     public float countdown;
 
-    public Text startCountdown;
+    public TextMeshProUGUI startCountdown;
 
     //Start :)
     void Start()
@@ -26,7 +27,7 @@ public class Timer : MonoBehaviour
             startCountdown.text = Mathf.Round(countdown).ToString();
         }
 
-        if (countdown < 0)
+        if (countdown <= 0)
         {
             print("You Lose");
             SceneManager.LoadScene(1);
