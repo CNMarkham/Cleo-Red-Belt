@@ -5,20 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class DEATH : MonoBehaviour
 {
-    public GameObject Codey;
 
-    private void OnCollisionEnter(Collision touching)
+    private void OnCollisionEnter(Collision collider)
     {
-/*        if ()
-        {
-            SceneManager.LoadScene(1);
-        }*/
+        SceneManager.LoadScene(3);
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

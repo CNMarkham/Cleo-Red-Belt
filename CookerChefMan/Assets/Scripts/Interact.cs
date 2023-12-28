@@ -86,7 +86,7 @@ public class Interact : MonoBehaviour
             }
         }
 
-       if (GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/toastSlice").activeSelf && GameObject.Find("Everything/FoodOnPlate/Receivers/Receivers1/FrenchToast/egg").activeSelf)
+       if (GameObject.Find("Everything/FoodOnPlate/Receivers/FrenchToast/toastSlice").activeSelf && GameObject.Find("Everything/FoodOnPlate/Receivers/FrenchToast/egg").activeSelf)
         {
             SceneManager.LoadScene(2);
         }
